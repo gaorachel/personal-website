@@ -1,3 +1,3 @@
-export default function CV() {
+export function CV() {
   return <> CV </>;
 }
