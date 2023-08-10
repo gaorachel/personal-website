@@ -1,0 +1,19 @@
+.jobSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobSubHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobMain {
+  display: flex;
+  flex-direction: column;
+}
