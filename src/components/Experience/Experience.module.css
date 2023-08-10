@@ -6,11 +6,15 @@
 .jobHeader {
   display: flex;
   justify-content: space-between;
+  font-weight: 500;
+  font-size: large;
 }
 
 .jobSubHeader {
   display: flex;
   justify-content: space-between;
+  color: var(--frost-2);
+  /* font-size: large; */
 }
 
 .jobMain {
