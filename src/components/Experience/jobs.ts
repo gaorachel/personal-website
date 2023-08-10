@@ -1,15 +1,17 @@
-export const jobs = [
+import { JobType } from "./Experience";
+
+export const jobs: JobType[] = [
   {
     id: 3,
     title: "Analyst",
     location: "Hatfield, UK",
     company: "Ocado",
-    employmentPeriod: { startDate: "2022-10-01", endDate: "Present" },
+    employmentPeriod: { startDate: "2022-10-01", endDate: "" },
     workHighlights: [
       "Lead Supply Chain Analytics projects for Christmas 2023 for both Ocado and Morrisons.",
       "Create/Maintain/Refactor reports across platforms including BigQuery, Oracle, Tableau, Google Sheets, and Excel.",
       "Champion a culture of code review and comprehensive documentation within the team.",
-      "Coach fellow team members and establish uniform code conventions among the team.",
+      "Coach fellow team members and establish code conventions among the team.",
     ],
   },
   {
@@ -21,7 +23,7 @@ export const jobs = [
     workHighlights: [
       "Designed and developed databases using BigQuery. Collected data from spreadsheets into databases for forthcoming analyses. ",
       "Delivered data analysis and actionable insights to empower senior management in their data-oriented decision-making processes.",
-      "Acted as a power user, closely collaborating with the Tech team to optimise the existing ERP system and introduce new features.",
+      "As a power user, closely collaborating with the Tech team to optimise the existing ERP system and introduce new features.",
     ],
   },
   {
