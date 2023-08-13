@@ -1,4 +1,21 @@
 .about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.aboutText {
+  min-width: 200px;
+  max-width: 600px;
+  text-align: right;
+}
+
+.skillChart {
+  min-width: 100px;
+  max-width: 500px;
+  min-height: 50px;
+  max-height: 200px;
+
+  padding-left: 150px;
 }
