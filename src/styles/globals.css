@@ -13,19 +13,21 @@
   --frost-3: #81a1c1;
   --frost-4: #5e81ac;
 
-  --Aurora-1: #bf616a;
-  --Aurora-2: #d08770;
-  --Aurora-3: #ebcb8b;
-  --Aurora-4: #a3be8c;
-  --Aurora-5: #b48ead;
+  --aurora-1: #bf616a;
+  --aurora-2: #d08770;
+  --aurora-3: #ebcb8b;
+  --aurora-4: #a3be8c;
+  --aurora-5: #b48ead;
+}
 
+body {
   background-color: var(--polar-night-1);
+  max-width: 900px;
+  margin: auto;
   color: var(--snow-storm-3);
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.4;
-
-  margin-left: 200px;
-  margin-right: 200px;
+  padding: 16px;
 }
