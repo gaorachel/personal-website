@@ -4,9 +4,20 @@
  */
 import dynamic from "next/dynamic";
 const ResponsiveLine = dynamic(() => import("@nivo/line").then((m) => m.ResponsiveLine), { ssr: false });
+import { Point } from "@nivo/line";
+
+import JavaScriptIcon from "./skillIcons/javascript.svg";
+import NumPyIcon from "./skillIcons/numpy.svg";
+import PandasIcon from "./skillIcons/pandas.svg";
+import TypeScriptIcon from "./skillIcons/typescript.svg";
+import PythonIcon from "./skillIcons/python.svg";
+import SQLIcon from "./skillIcons/sql.svg";
+import ReactIcon from "./skillIcons/react.svg";
+import HTMLIcon from "./skillIcons/html.svg";
+import CSSIcon from "./skillIcons/css.svg";
+// import ReactIcon from "./skillIcons/react.svg";
 
 import styles from "./About.module.css";
-import { Point } from "@nivo/line";
 
 function SkillChart() {
   const data = [
@@ -31,7 +42,7 @@ function SkillChart() {
         },
         {
           x: "2020-06-15",
-          y: "automate bring stuff",
+          y: "automate boring stuff",
         },
         {
           x: "2020-10-01",
@@ -48,6 +59,10 @@ function SkillChart() {
         {
           x: "2023-02-01",
           y: "javascript",
+        },
+        {
+          x: "2023-02-10",
+          y: "html",
         },
         {
           x: "2023-03-25",
@@ -89,7 +104,7 @@ function SkillChart() {
   return (
     <ResponsiveLine
       data={data}
-      margin={{ top: 15, right: 15, bottom: 15, left: 15 }} // make sure showing up full chart
+      margin={{ top: 25, right: 25, bottom: 15, left: 25 }} // make sure showing up full chart
       xFormat="time:%Y-%m-%d"
       xScale={{
         format: "%Y-%m-%d",
@@ -114,11 +129,26 @@ function SkillChart() {
       curve="monotoneX"
       enableGridX={false}
       enableGridY={false}
-      useMesh={true}
+      useMesh
+      // enablePointLabel
+      // pointSize={8}
+
+      pointSymbol={(data) => {
+        if (data.datum.y === "python") return <PythonIcon />;
+        if (data.datum.y === "javascript") return <JavaScriptIcon />;
+        if (data.datum.y === "typescript") return <TypeScriptIcon />;
+        if (data.datum.y === "numpy") return <NumPyIcon />;
+        if (data.datum.y === "pandas") return <PandasIcon />;
+        if (data.datum.y === "sql") return <SQLIcon />;
+        if (data.datum.y === "react") return <ReactIcon />;
+        if (data.datum.y === "html") return <HTMLIcon />;
+        if (data.datum.y === "css") return <CSSIcon />;
+        if (data.datum.y === "automate boring stuff") return <> Automate Boring Stuff </>;
+        if (data.datum.y === "css") return <CSSIcon />;
+      }}
       tooltip={CustomTooltip}
-      pointSize={8}
       enableCrosshair={false}
-      colors="#b48ead" // --aurora-5
+      colors="#eceff4" // --snow-storm-3
     />
   );
 }
@@ -135,7 +165,6 @@ When I'm not at the computer, I like to lift weights, wander around the city, an
       <div className={styles.skillChart}>
         <SkillChart />
       </div>
-
       <div className={styles.aboutText}> {aboutText} </div>
     </div>
   );
