@@ -11,11 +11,13 @@ import NumPyIcon from "./skillIcons/numpy.svg";
 import PandasIcon from "./skillIcons/pandas.svg";
 import TypeScriptIcon from "./skillIcons/typescript.svg";
 import PythonIcon from "./skillIcons/python.svg";
+import BigQueryIcon from "./skillIcons/bigQuery.svg";
 import SQLIcon from "./skillIcons/sql.svg";
 import ReactIcon from "./skillIcons/react.svg";
 import HTMLIcon from "./skillIcons/html.svg";
 import CSSIcon from "./skillIcons/css.svg";
 // import ReactIcon from "./skillIcons/react.svg";
+import NextJSIcon from "./skillIcons/nextjs.svg";
 
 import styles from "./About.module.css";
 
@@ -37,10 +39,6 @@ function SkillChart() {
           y: "numpy",
         },
         {
-          x: "2020-06-01",
-          y: "openpyxl",
-        },
-        {
           x: "2020-06-15",
           y: "automate boring stuff",
         },
@@ -57,7 +55,7 @@ function SkillChart() {
           y: "web development",
         },
         {
-          x: "2023-02-01",
+          x: "2023-02-02",
           y: "javascript",
         },
         {
@@ -144,8 +142,10 @@ function SkillChart() {
         if (data.datum.y === "html") return <HTMLIcon />;
         if (data.datum.y === "css") return <CSSIcon />;
         if (data.datum.y === "automate boring stuff") return <> Automate Boring Stuff </>;
-        if (data.datum.y === "css") return <CSSIcon />;
+        if (data.datum.y === "nextjs") return <NextJSIcon />;
       }}
+      // enablePointLabel
+      // pointLabelYOffset={100}
       tooltip={CustomTooltip}
       enableCrosshair={false}
       colors="#eceff4" // --snow-storm-3

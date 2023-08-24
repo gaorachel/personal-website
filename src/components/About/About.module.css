@@ -19,3 +19,7 @@
 .skillChart text {
   fill: var(--snow-storm-3) !important; /* have to do in this way otherwise the axis will not show up*/
 }
+
+.upPoint {
+  transform: 30px;
+}
