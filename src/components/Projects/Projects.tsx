@@ -1,4 +1,5 @@
 import { ProjectCard } from "./ProjectCard/ProjectCard";
+import Image from "next/image";
 
 import style from "./Projects.module.css";
 
@@ -10,6 +11,7 @@ export function Projects() {
       websiteURL: "https://flavour-quest-rg.vercel.app/",
       githubURL: "https://github.com/gaorachel/flavour-quest",
       techStack: ["TypeScript", "ReactJS", "NextJS", "ChatGPT", "Google Search API", "Chakra UI"],
+      image: "/images/flavourQuest.png",
     },
     {
       name: "Place Finder",
@@ -18,6 +20,7 @@ export function Projects() {
       websiteURL: "https://place-finder-rg.vercel.app/",
       githubURL: "https://github.com/gaorachel/place-finder",
       techStack: ["TypeScript", "ReactJS", "Mapbox API"],
+      image: "/images/placeFinder.png",
     },
     {
       name: "Youtube Visual Clone",
@@ -25,6 +28,7 @@ export function Projects() {
       websiteURL: "https://youtube-visual-clone-rg.vercel.app/",
       githubURL: "https://github.com/gaorachel/youtube-visual-clone",
       techStack: ["TypeScript", "ReactJS", "CSS", "HTML"],
+      image: "/images/youtubeVisualClone.png",
     },
     {
       name: "Random City Info",
@@ -32,13 +36,27 @@ export function Projects() {
       websiteURL: "https://random-city-info-rg.vercel.app/",
       githubURL: "https://github.com/gaorachel/random-city-info",
       techStack: ["TypeScript", "ReactJS", "HTML", "CSS"],
+      image: "/images/randomCityInfo.png",
     },
   ];
+
+  const imageStyle = { borderRadius: "6px" };
 
   return (
     <>
       {projectData.map((project) => {
-        return <ProjectCard project={project} key={project.name} />;
+        return (
+          <div className={style.section} key={project.name}>
+            <Image
+              src={project.image}
+              width={230}
+              height={129}
+              alt="image of flavour quest website"
+              style={imageStyle}
+            />
+            <ProjectCard project={project} />
+          </div>
+        );
       })}
     </>
   );
