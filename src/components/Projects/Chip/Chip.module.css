@@ -1,0 +1,9 @@
+.chip {
+  border: 1px;
+  border-radius: 15px;
+  background-color: var(--aurora-5);
+  min-width: fit-content;
+  padding: 2px 5px;
+  color: var(--snow-storm-3);
+  margin-right: 4px;
+}

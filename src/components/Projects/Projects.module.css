@@ -1,12 +1,1 @@
-.section {
-  font-size: 22px;
-}
 
-.project {
-  text-decoration: none;
-  color: var(--snow-storm-3);
-}
-
-.project:hover {
-  color: var(--aurora-3);
-}
