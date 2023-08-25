@@ -1,12 +1,18 @@
 .card {
   display: flex;
+  gap: 30px;
+  padding: 10px 0px;
+}
+
+.text {
+  display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
 .project {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   margin: 0px;
 }
@@ -16,7 +22,17 @@
   text-decoration: none;
 }
 
+.url:hover {
+  color: var(--aurora-3);
+}
+
 .intro {
   color: var(--snow-storm-3);
   opacity: 0.6;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
 }
