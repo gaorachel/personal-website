@@ -1,5 +1,5 @@
 import { About } from "@/components/About/About";
-import { Projects } from "@/components/Projects";
+import { Projects } from "@/components/Projects/Projects";
 import { Experience } from "@/components/Experience/Experience";
 import { Contact } from "@/components/Contact";
 import { CV } from "@/components/CV";

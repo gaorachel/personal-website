@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.url {
+  color: var(--frost-3);
+  text-decoration: none;
+}
+
+.intro {
+  color: var(--snow-storm-3);
+  opacity: 0.6;
+}
