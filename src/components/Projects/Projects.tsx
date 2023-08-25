@@ -10,7 +10,16 @@ export function Projects() {
       intro: "A full-stack web app using ChatGPT to generate personalised recipes based on user input.",
       websiteURL: "https://flavour-quest-rg.vercel.app/",
       githubURL: "https://github.com/gaorachel/flavour-quest",
-      techStack: ["TypeScript", "ReactJS", "NextJS", "ChatGPT", "Google Search API", "Chakra UI"],
+      techStack: [
+        "TypeScript",
+        "ReactJS",
+        "NextJS",
+        "ChatGPT",
+        "Google Search API",
+        "Chakra UI",
+        "React Testing Library",
+        "Jest",
+      ],
       image: "/images/flavourQuest.png",
     },
     {
@@ -19,7 +28,7 @@ export function Projects() {
         "An app to help you discover and explore cafes, pubs, and restaurants around a specific postcode in the UK.",
       websiteURL: "https://place-finder-rg.vercel.app/",
       githubURL: "https://github.com/gaorachel/place-finder",
-      techStack: ["TypeScript", "ReactJS", "Mapbox API"],
+      techStack: ["TypeScript", "ReactJS", "Mapbox API", "CSS", "HTML"],
       image: "/images/placeFinder.png",
     },
     {
@@ -40,20 +49,11 @@ export function Projects() {
     },
   ];
 
-  const imageStyle = { borderRadius: "6px" };
-
   return (
     <>
       {projectData.map((project) => {
         return (
           <div className={style.section} key={project.name}>
-            <Image
-              src={project.image}
-              width={230}
-              height={129}
-              alt="image of flavour quest website"
-              style={imageStyle}
-            />
             <ProjectCard project={project} />
           </div>
         );
