@@ -1,6 +1,7 @@
 import { Chip } from "../Chip/Chip";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { BsGithub } from "react-icons/bs";
+import { BiWifi0 } from "react-icons/bi";
 
 import style from "./ProjectCard.module.css";
 
@@ -18,20 +19,24 @@ type ProjectCardProps = {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className={style.card}>
-      <h1 className={style.project}>{project.name}</h1>
+      <div className={style.project}>{project.name}</div>
 
-      <a href={project.websiteURL} className={style.url}>
-        {/* {project.name} <RiExternalLinkLine /> */}
-        website <RiExternalLinkLine />
-      </a>
-      {" | "}
-      <a href={project.githubURL} className={style.url}>
-        code <BsGithub />
-      </a>
-      <div> {project.intro} </div>
-      {project.techStack.map((el) => {
-        return <Chip key={el}> {el} </Chip>;
-      })}
+      <div className={style.intro}> {project.intro} </div>
+      <div>
+        {project.techStack.map((el) => {
+          return <Chip key={el}> {el} </Chip>;
+        })}
+      </div>
+      <div>
+        <a href={project.websiteURL} className={style.url}>
+          {/* {project.name} <RiExternalLinkLine /> */}
+          website <RiExternalLinkLine />
+        </a>
+        <BiWifi0 />
+        <a href={project.githubURL} className={style.url}>
+          code <BsGithub />
+        </a>
+      </div>
     </div>
   );
 }

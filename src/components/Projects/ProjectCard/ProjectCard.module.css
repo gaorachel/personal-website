@@ -1,5 +1,7 @@
 .card {
-  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .project {
@@ -15,5 +17,6 @@
 }
 
 .intro {
-  color: var(--snow-storm-1);
+  color: var(--snow-storm-3);
+  opacity: 0.6;
 }
