@@ -1,5 +1,4 @@
 import { ProjectCard } from "./ProjectCard/ProjectCard";
-import Image from "next/image";
 
 import style from "./Projects.module.css";
 

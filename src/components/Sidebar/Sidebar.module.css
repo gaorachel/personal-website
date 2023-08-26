@@ -1,0 +1,20 @@
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 50px 15px;
+  bottom: 0;
+  right: 0;
+}
+
+.icon {
+  color: var(--snow-storm-3);
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: var(--aurora-3);
+}
