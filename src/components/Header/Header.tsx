@@ -18,14 +18,6 @@ export function Header() {
       label: "Experience",
       link: "#experience",
     },
-    {
-      label: "Contact",
-      link: "#contact",
-    },
-    {
-      label: "CV",
-      link: "#cv",
-    },
   ];
 
   return (
