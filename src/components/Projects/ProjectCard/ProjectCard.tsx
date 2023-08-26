@@ -1,4 +1,4 @@
-import { Chip } from "../Chip/Chip";
+import { Chip } from "../../Chip/Chip";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { BsGithub } from "react-icons/bs";
 import { BiWifi0 } from "react-icons/bi";

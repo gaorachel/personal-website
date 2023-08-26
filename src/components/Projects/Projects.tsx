@@ -36,7 +36,7 @@ export function Projects() {
       intro: "YouTube home page visual clone",
       websiteURL: "https://youtube-visual-clone-rg.vercel.app/",
       githubURL: "https://github.com/gaorachel/youtube-visual-clone",
-      techStack: ["TypeScript", "ReactJS", "CSS", "HTML"],
+      techStack: ["JavaScript", "ReactJS", "CSS", "HTML"],
       image: "/images/youtubeVisualClone.png",
     },
     {
@@ -44,7 +44,7 @@ export function Projects() {
       intro: "An app to show you the current weather and its local time of a random capital city",
       websiteURL: "https://random-city-info-rg.vercel.app/",
       githubURL: "https://github.com/gaorachel/random-city-info",
-      techStack: ["TypeScript", "ReactJS", "HTML", "CSS"],
+      techStack: ["JavaScript", "ReactJS", "HTML", "CSS"],
       image: "/images/randomCityInfo.png",
     },
   ];

@@ -1,51 +1,42 @@
-import { jobs } from "./jobs";
+import { Job } from "./Job/Job";
 
 import styles from "./Experience.module.css";
 
-export type JobType = {
-  id: number;
-  title: string;
-  location: string;
-  company: string;
-  employmentPeriod: {
-    startDate: string;
-    endDate: string;
-  };
-  workHighlights: string[];
-};
+import type { JobType } from "./Job/Job";
 
-type JobProps = {
-  job: JobType;
-};
-
-function Job({ job }: JobProps) {
-  const dateConvertor = (dateString: string) => {
-    const date = new Date(dateString);
-    if (dateString === "") return "Present";
-    return date.toLocaleDateString("en-GB", { month: "short", year: "numeric" });
-  };
-
-  return (
-    <div className={styles.jobSection}>
-      <div className={styles.jobHeader}>
-        <span> {job.company} </span>
-        <span> {job.location}</span>
-      </div>
-      <div className={styles.jobSubHeader}>
-        <span> {job.title} </span>
-        <span>
-          {dateConvertor(job.employmentPeriod.startDate)} - {dateConvertor(job.employmentPeriod.endDate)}
-        </span>
-      </div>
-      <div className={styles.jobMain}>
-        {job.workHighlights.map((el: string, idx: number) => {
-          return <div key={idx}> {`- ${el}`} </div>;
-        })}
-        <br />
-      </div>
-    </div>
-  );
-}
+const jobs: JobType[] = [
+  {
+    id: 3,
+    title: "Analyst",
+    location: "Hatfield, UK",
+    company: "Ocado",
+    employmentPeriod: { startDate: "2022-10-01", endDate: "" },
+    jobSummary: ["Providing data analysis and refactoring legacy code."],
+    skills: ["BigQuery", "Oracle", "Tableau", "Project Management"],
+  },
+  {
+    id: 2,
+    title: "Supply Chain Manager",
+    location: "London, UK",
+    company: "Samarkand Global",
+    employmentPeriod: { startDate: "2021-04-01", endDate: "2022-09-01" },
+    jobSummary: [
+      "Delivered data analysis and actionable insights to empower senior management in their data-oriented decision-making processes.",
+    ],
+    skills: ["Metabase", "Python", "Product Management"],
+  },
+  {
+    id: 1,
+    title: "Supply Chain Specialist",
+    location: "London, UK",
+    company: "Samarkand Global",
+    employmentPeriod: { startDate: "2019-09-01", endDate: "2021-03-01" },
+    jobSummary: [
+      "Created automation tools in Python for diverse business functions, replacing manual tasks and slashing time requirements from weeks to minutes.",
+    ],
+    skills: ["Python", "Pandas", "NumPy"],
+  },
+];
 
 export function Experience() {
   return (
