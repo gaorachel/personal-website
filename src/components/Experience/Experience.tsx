@@ -11,7 +11,7 @@ const jobs: JobType[] = [
     location: "Hatfield, UK",
     company: "Ocado",
     employmentPeriod: { startDate: "2022-10-01", endDate: "" },
-    jobSummary: ["Providing data analysis and refactoring legacy code."],
+    jobSummary: ["Providing data analysis and refactoring legacy SQL code."],
     skills: ["BigQuery", "Oracle", "Tableau", "Project Management"],
   },
   {

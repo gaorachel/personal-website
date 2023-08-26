@@ -39,7 +39,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </a>
           <BiWifi0 />
           <a href={project.githubURL} className={style.url}>
-            code <BsGithub />
+            source <BsGithub />
           </a>
         </div>
       </div>
