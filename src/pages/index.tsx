@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header/Header";
 import { About } from "@/components/About/About";
 import { Projects } from "@/components/Projects/Projects";
 import { Experience } from "@/components/Experience/Experience";
@@ -9,8 +10,8 @@ import styles from "@/styles/Home.module.css";
 export default function Home() {
   return (
     <>
-      <header> about projects experience contact cv </header>
-      <main className={styles.sections}>
+      <Header />
+      <main className={styles.main}>
         <section id="about">
           <About />
         </section>

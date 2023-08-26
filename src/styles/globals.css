@@ -22,12 +22,14 @@
 
 body {
   background-color: var(--polar-night-1);
-  max-width: 900px;
-  margin: auto;
   color: var(--snow-storm-3);
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.4;
-  padding: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
