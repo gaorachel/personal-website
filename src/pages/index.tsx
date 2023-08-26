@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <header> about projects experience contact cv </header>
-      <main>
+      <main className={styles.sections}>
         <section id="about">
           <About />
         </section>
