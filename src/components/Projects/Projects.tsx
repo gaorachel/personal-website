@@ -49,7 +49,7 @@ export function Projects() {
   ];
 
   return (
-    <>
+    <section id="projects">
       {projectData.map((project) => {
         return (
           <div className={style.section} key={project.name}>
@@ -57,6 +57,6 @@ export function Projects() {
           </div>
         );
       })}
-    </>
+    </section>
   );
 }
