@@ -1,0 +1,51 @@
+.timeline {
+  width: 100% !important;
+  margin: 0;
+}
+
+.timeline > div {
+  margin: 3em 0;
+}
+
+.timeline > div > div {
+  transform: translateY(-20px);
+  animation: none !important;
+}
+
+.timeline::before {
+  width: 2px;
+  background-color: var(--snow-storm-1);
+  margin-left: -1px !important;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  line-height: normal;
+  margin: 0;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
+  color: var(--snow-storm-3);
+}
+
+.description {
+  color: var(--snow-storm-3);
+  opacity: 0.6;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.date {
+  margin: -10px 0px;
+  color: var(--snow-storm-3);
+  text-align: start;
+}

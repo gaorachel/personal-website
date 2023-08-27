@@ -11,12 +11,12 @@ export function Header() {
       link: "#about",
     },
     {
-      label: "Projects",
-      link: "#projects",
+      label: "My journey",
+      link: "#journey",
     },
     {
-      label: "Experience",
-      link: "#experience",
+      label: "Projects",
+      link: "#projects",
     },
   ];
 
