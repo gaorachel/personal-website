@@ -50,6 +50,7 @@ export function Projects() {
 
   return (
     <section id="projects">
+      <h1 className={style.header}> Projects </h1>
       {projectData.map((project) => {
         return (
           <div className={style.section} key={project.name}>
