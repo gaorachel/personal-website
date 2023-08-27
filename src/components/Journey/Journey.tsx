@@ -67,7 +67,7 @@ export function Journey() {
   ];
 
   return (
-    <>
+    <section id="journey">
       <VerticalTimeline className={styles.timeline}>
         {events.map((event) => {
           return (
@@ -110,6 +110,6 @@ export function Journey() {
           );
         })}
       </VerticalTimeline>
-    </>
+    </section>
   );
 }

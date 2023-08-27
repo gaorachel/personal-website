@@ -1,25 +1,23 @@
 .about {
   display: flex;
-  justify-content: space-between;
-  height: fit-content;
-  gap: 30px;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.aboutText {
-  width: 600px;
-  min-width: 400px;
-  text-align: right;
+.name {
+  font-size: 50px;
 }
 
-.skillChart {
-  min-width: 300px;
-  height: 200px;
+.intro {
+  font-size: 25px;
 }
 
-.skillChart text {
-  fill: var(--snow-storm-3) !important; /* have to do in this way otherwise the axis will not show up*/
+.icons {
+  display: flex;
+  gap: 8px;
 }
 
-.upPoint {
-  transform: 30px;
+.icons > svg {
+  height: 30px;
+  width: 30px;
 }
