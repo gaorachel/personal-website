@@ -1,6 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import { MdWork, MdComputer } from "react-icons/md";
 import { FaPython, FaDatabase } from "react-icons/fa";
+import { HiDatabase } from "react-icons/hi";
 import { Chip } from "../Chip/Chip";
 
 import "react-vertical-timeline-component/style.min.css";
@@ -41,7 +42,7 @@ export function Journey() {
       date: "Jun 2020",
       position: "left",
       skills: ["BigQuery", "Data Analysis", "Data Visualisation"],
-      icon: <FaDatabase />,
+      icon: <HiDatabase />,
       iconBgColor: "var(--frost-1)",
     },
     {
