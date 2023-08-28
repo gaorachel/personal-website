@@ -1,7 +1,7 @@
 import JavaScriptIcon from "./skillIcons/javascript.svg";
 import TypeScriptIcon from "./skillIcons/typescript.svg";
 import PythonIcon from "./skillIcons/python.svg";
-import BigQueryIcon from "./skillIcons/bigQuery.svg";
+import BigQueryIcon from "./skillIcons/bigquery.svg";
 import SQLIcon from "./skillIcons/sql.svg";
 import ReactIcon from "./skillIcons/react.svg";
 import HTMLIcon from "./skillIcons/html.svg";
@@ -17,8 +17,7 @@ export function About() {
       <h2 className={styles.intro}> I am a self taught developer and this is my journey </h2>
       <div className={styles.icons}>
         <JavaScriptIcon /> <TypeScriptIcon /> <ReactIcon /> <HTMLIcon /> <CSSIcon /> <NextJSIcon />
-        <SQLIcon />
-        <BigQueryIcon />
+        <SQLIcon /> <BigQueryIcon />
         <PythonIcon />
       </div>
     </section>
