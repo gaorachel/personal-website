@@ -6,7 +6,7 @@ export function Projects() {
   const projectData = [
     {
       name: "Flavour Quest",
-      intro: "A full-stack web app using ChatGPT to generate personalised recipes based on user input.",
+      intro: "A full-stack web app using ChatGPT to generate personalised recipes based on user input",
       websiteURL: "https://flavour-quest-rg.vercel.app/",
       githubURL: "https://github.com/gaorachel/flavour-quest",
       techStack: [
@@ -24,7 +24,7 @@ export function Projects() {
     {
       name: "Place Finder",
       intro:
-        "An app to help you discover and explore cafes, pubs, and restaurants around a specific postcode in the UK.",
+        "An app to help you discover and explore cafes, pubs, and restaurants around a specific postcode in the UK",
       websiteURL: "https://place-finder-rg.vercel.app/",
       githubURL: "https://github.com/gaorachel/place-finder",
       techStack: ["TypeScript", "ReactJS", "Mapbox API", "CSS", "HTML"],
