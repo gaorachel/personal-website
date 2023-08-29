@@ -4,10 +4,28 @@
   padding: 10px 0px;
 }
 
+@media (max-width: 900px) {
+  .card {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    padding: 0px 0px 5px 0px;
+  }
+}
+
 .text {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+@media (max-width: 900px) {
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 300px;
+  }
 }
 
 .project {
@@ -15,6 +33,15 @@
   font-size: 20px;
   font-weight: 500;
   margin: 0px;
+}
+
+@media (max-width: 900px) {
+  .project {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+  }
 }
 
 .url {
@@ -36,4 +63,12 @@
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .chips {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
 }

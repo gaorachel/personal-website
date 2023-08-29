@@ -3,6 +3,7 @@ import { RiExternalLinkLine } from "react-icons/ri";
 import { BsGithub } from "react-icons/bs";
 import { BiWifi0 } from "react-icons/bi";
 import Image from "next/image";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 import style from "./ProjectCard.module.css";
 
@@ -19,11 +20,21 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const imageStyle = { borderRadius: "6px" };
+  const { width } = useWindowSize();
+  if (!width) return null;
+
+  const imgWidth = width < 900 ? 300 : 400;
+  const imgHeight = width < 900 ? 169 : 225;
 
   return (
     <div className={style.card}>
-      <Image src={project.image} width={400} height={225} alt={`image of ${project.name}`} style={imageStyle} />
+      <Image
+        src={project.image}
+        width={imgWidth}
+        height={imgHeight}
+        alt={`image of ${project.name}`}
+        style={{ borderRadius: 6 }}
+      />
 
       <div className={style.text}>
         <div className={style.project}>{project.name}</div>
