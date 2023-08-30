@@ -35,7 +35,7 @@ export function Header() {
 
   const MobileMode = () => {
     return (
-      <div className={styles.menu} style={{ width: isOpen ? 100 : 0 }}>
+      <div className={styles.menu} style={{ width: isOpen ? 105 : 0 }}>
         {isOpen && <div className={styles.overlay} onClick={() => setIsOpen(false)} />}
         {!isOpen && (
           <button
