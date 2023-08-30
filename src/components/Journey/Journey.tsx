@@ -3,11 +3,15 @@ import { MdWork, MdComputer } from "react-icons/md";
 import { FaPython, FaDatabase } from "react-icons/fa";
 import { HiDatabase } from "react-icons/hi";
 import { Chip } from "../Chip/Chip";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 import "react-vertical-timeline-component/style.min.css";
 import styles from "./Journey.module.css";
 
 export function Journey() {
+  const { width } = useWindowSize();
+  if (!width) return null;
+
   const events = [
     {
       name: "Web Development",
@@ -15,8 +19,8 @@ export function Journey() {
       date: "Dec 2022 - Present",
       position: "left",
       skills: ["TypeScript", "React", "NextJS", "HTML", "CSS"],
-      icon: <MdComputer />,
-      iconBgColor: "var(--frost-1)",
+      icon: <MdComputer width={10} height={10} />,
+      color: "var(--frost-1)",
     },
     {
       name: "Data Analyst",
@@ -25,7 +29,7 @@ export function Journey() {
       position: "right",
       skills: ["BigQuery", "Oracle", "Tableau", "Project Management"],
       icon: <MdWork />,
-      iconBgColor: "var(--frost-4)",
+      color: "var(--frost-3)",
     },
     {
       name: "Supply Chain Manager",
@@ -34,7 +38,7 @@ export function Journey() {
       position: "right",
       skills: ["Metabase", "Python", "Product Management"],
       icon: <MdWork />,
-      iconBgColor: "var(--frost-4)",
+      color: "var(--frost-3)",
     },
     {
       name: "SQL",
@@ -43,7 +47,7 @@ export function Journey() {
       position: "left",
       skills: ["BigQuery", "Data Analysis", "Data Visualisation"],
       icon: <HiDatabase />,
-      iconBgColor: "var(--frost-1)",
+      color: "var(--frost-1)",
     },
     {
       name: "Python",
@@ -52,7 +56,7 @@ export function Journey() {
       position: "left",
       skills: ["Python", "Pandas", "NumPy"],
       icon: <FaPython />,
-      iconBgColor: "var(--frost-1)",
+      color: "var(--frost-1)",
     },
     {
       name: "Supply Chain Specialist",
@@ -62,7 +66,7 @@ export function Journey() {
       position: "right",
       skills: ["Python", "Pandas", "NumPy"],
       icon: <MdWork />,
-      iconBgColor: "var(--frost-4)",
+      color: "var(--frost-3)",
     },
   ];
 
@@ -70,6 +74,24 @@ export function Journey() {
     <section id="journey">
       <VerticalTimeline className={styles.timeline}>
         {events.map((event) => {
+          const finalPosition = width < 1000 ? "right" : event.position;
+          const iconStyle =
+            width < 1000
+              ? {
+                  background: event.color,
+                  boxShadow: "none",
+                  width: 35,
+                  height: 35,
+                  margin: 0,
+                }
+              : {
+                  background: event.color,
+                  boxShadow: "none",
+                  width: 40,
+                  height: 40,
+                  margin: -20,
+                };
+
           return (
             <VerticalTimelineElement
               className={styles.card}
@@ -81,26 +103,19 @@ export function Journey() {
                 marginRight: 6,
                 // marginTop: -20,
                 padding: 0,
-                textAlign: event.position === "right" ? "start" : "end",
+                textAlign: finalPosition === "right" ? "start" : "end",
               }}
               contentArrowStyle={{ borderRight: "none" }}
-              iconStyle={{
-                background: event.iconBgColor,
-                boxShadow: "none",
-                width: 40,
-                height: 40,
-                margin: -20,
-              }}
+              iconStyle={iconStyle}
               icon={event.icon}
-              date={event.date}
-              dateClassName={styles.date}
-              position={event.position}
+              position={finalPosition}
               key={event.name}
             >
               <div className={styles.text}>
+                <div style={{ color: event.color }}> {event.date} </div>
                 <div className={styles.header}>{event.name}</div>
                 <div className={styles.description}> {event.description}</div>
-                <div className={styles.chips} style={{ alignSelf: event.position === "right" ? "start" : "end" }}>
+                <div className={styles.chips} style={{ alignSelf: finalPosition === "right" ? "start" : "end" }}>
                   {event.skills.map((skill) => {
                     return <Chip key={event.name}> {skill} </Chip>;
                   })}

@@ -4,10 +4,25 @@
   padding: 10px 0px;
 }
 
+@media (max-width: 900px) {
+  .card {
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 0px 5px 0px;
+  }
+}
+
 .text {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+@media (max-width: 900px) {
+  .text {
+    gap: 3px;
+    width: 300px;
+  }
 }
 
 .project {
@@ -15,6 +30,12 @@
   font-size: 20px;
   font-weight: 500;
   margin: 0px;
+}
+
+@media (max-width: 900px) {
+  .project {
+    font-size: 18px;
+  }
 }
 
 .url {
@@ -36,4 +57,10 @@
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .chips {
+    gap: 4px;
+  }
 }
