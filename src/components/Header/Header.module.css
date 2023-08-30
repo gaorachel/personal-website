@@ -55,7 +55,7 @@
 
 .overlay {
   position: fixed;
-  width: calc(100vw - 100px);
+  width: calc(100vw - 105px);
   left: 0;
   height: 100vh;
   top: 0;
