@@ -1,0 +1,14 @@
+.section {
+  color: var(--snow-storm-1);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--frost-3);
+}
+
+.link:hover {
+  color: var(--aurora-3);
+}
