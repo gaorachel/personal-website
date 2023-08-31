@@ -1,12 +1,13 @@
 .section {
   padding: 10px 0px;
 }
+
 .header {
   font-size: 35px;
   text-decoration: underline;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 420) {
   .header {
     font-size: 25px;
   }

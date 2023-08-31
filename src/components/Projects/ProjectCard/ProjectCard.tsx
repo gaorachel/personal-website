@@ -23,8 +23,22 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const { width } = useWindowSize();
   if (!width) return null;
 
-  const imgWidth = width < 900 ? 300 : 400;
-  const imgHeight = width < 900 ? 169 : 225;
+  let imgWidth = 0;
+  let imgHeight = 0;
+  if (width <= 420) {
+    imgWidth = 300;
+    imgHeight = 168.75;
+  } else if (width <= 750 && width > 420) {
+    imgWidth = 400;
+    imgHeight = 225;
+  } else if (width <= 900 && width > 750) {
+    imgWidth = 300;
+    imgHeight = 168.75;
+  }
+  if (width > 900) {
+    imgWidth = 400;
+    imgHeight = 225;
+  }
 
   return (
     <div className={style.card}>
