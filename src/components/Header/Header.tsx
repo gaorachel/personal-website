@@ -89,5 +89,5 @@ export function Header() {
     );
   };
 
-  return width < 900 ? <MobileMode /> : <WebMode />;
+  return width < 550 ? <MobileMode /> : <WebMode />;
 }

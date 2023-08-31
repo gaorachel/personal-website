@@ -74,23 +74,7 @@ export function Journey() {
     <section id="journey">
       <VerticalTimeline className={styles.timeline}>
         {events.map((event) => {
-          const finalPosition = width < 1000 ? "right" : event.position;
-          const iconStyle =
-            width < 1000
-              ? {
-                  background: event.color,
-                  boxShadow: "none",
-                  width: 35,
-                  height: 35,
-                  margin: 0,
-                }
-              : {
-                  background: event.color,
-                  boxShadow: "none",
-                  width: 40,
-                  height: 40,
-                  margin: -20,
-                };
+          const finalPosition = width < 1170 ? "right" : event.position;
 
           return (
             <VerticalTimelineElement
@@ -101,13 +85,13 @@ export function Journey() {
                 color: "var(--frost-1)",
                 marginLeft: 6,
                 marginRight: 6,
-                // marginTop: -20,
                 padding: 0,
                 textAlign: finalPosition === "right" ? "start" : "end",
               }}
               contentArrowStyle={{ borderRight: "none" }}
-              iconStyle={iconStyle}
               icon={event.icon}
+              iconClassName={styles.icon}
+              iconStyle={{ background: event.color }}
               position={finalPosition}
               key={event.name}
             >
