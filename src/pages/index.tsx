@@ -1,11 +1,13 @@
 import { Header } from "@/components/Header/Header";
 import { About } from "@/components/About/About";
 import { Projects } from "@/components/Projects/Projects";
-import { Sidebar } from "@/components/Sidebar/Sidebar";
 import { Journey } from "@/components/Journey/Journey";
+import { Sidebar } from "@/components/Sidebar/Sidebar";
+import { Footer } from "@/components/Footer/Footer";
 
 import styles from "./index.module.css";
 import "react-tooltip/dist/react-tooltip.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
         <About />
         <Journey />
         <Projects />
+        <Footer />
       </main>
       <Sidebar />
     </>
