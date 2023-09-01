@@ -16,9 +16,9 @@ export function Footer() {
       <p>
         Built with{" "}
         <Link href="https://nextjs.org/" className={styles.link}>
-          NextJS
+          NextJS{" "}
         </Link>
-        , and deployed on{" "}
+        and deployed on{" "}
         <Link href="https://vercel.com/" className={styles.link}>
           Vercel
         </Link>
