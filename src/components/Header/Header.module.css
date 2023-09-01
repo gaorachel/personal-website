@@ -3,7 +3,7 @@
   height: 50px;
   width: 70%;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   position: fixed;
   z-index: 9999;
   background-color: var(--polar-night-1);
@@ -40,7 +40,7 @@
 
 .menu {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   position: fixed;
   z-index: 9999;
   background-color: var(--polar-night-2);

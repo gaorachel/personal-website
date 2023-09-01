@@ -100,8 +100,8 @@ export function Journey() {
                 <div className={styles.header}>{event.name}</div>
                 <div className={styles.description}> {event.description}</div>
                 <div className={styles.chips} style={{ alignSelf: finalPosition === "right" ? "start" : "end" }}>
-                  {event.skills.map((skill) => {
-                    return <Chip key={event.name}> {skill} </Chip>;
+                  {event.skills.map((skill, index) => {
+                    return <Chip key={`${event.name}-${index}`}> {skill} </Chip>;
                   })}
                 </div>
               </div>
