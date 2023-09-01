@@ -1,12 +1,30 @@
 .header {
   display: flex;
   height: 50px;
-  width: 100%;
+  width: 70%;
   align-items: center;
   justify-content: end;
   position: fixed;
   z-index: 9999;
   background-color: var(--polar-night-1);
+}
+
+@media (max-width: 2000px) {
+  .header {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .header {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    width: 95%;
+  }
 }
 
 .tab {
