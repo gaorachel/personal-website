@@ -33,7 +33,8 @@ export function Journey() {
     },
     {
       name: "Supply Chain Manager",
-      description: "Delivered data analysis and actionable insights to empower product decisions",
+      description:
+        "Delivered data analysis and actionable insights; \n collaborated with the tech team to enhance optimisations and develop features",
       date: "Apr 2021 - Sep 2022",
       position: "right",
       skills: ["Metabase", "Python", "Product Management"],
