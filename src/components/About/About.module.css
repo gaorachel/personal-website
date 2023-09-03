@@ -4,6 +4,12 @@
   gap: 10px;
 }
 
+.desc {
+  text-align: justify;
+  max-width: 610px;
+  margin: 10px 0px;
+}
+
 .name {
   font-size: 50px;
 }

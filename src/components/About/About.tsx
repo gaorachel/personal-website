@@ -16,6 +16,20 @@ export function About() {
     <section className={styles.about} id="about">
       <h1 className={styles.name}> Rachel Gao </h1>
       <h2 className={styles.intro}> I am a self taught developer and this is my journey </h2>
+      <div className={styles.desc}>
+        <p>
+          Back in 2020, I started learning Python to "automate boring stuff" in my operation job. I was genuinely
+          surprised by the power of programming and began exploring data analysis. Now, I spend my days writing SQL,
+          building dashboards while dedicating my free time to learning web development. I truly enjoy visualising
+          things and making users' and business people's jobs easier. As my next step, I aspire to become a frontend
+          engineer to create more!
+        </p>
+        <br />
+        <p>
+          When I'm not at the computer, I like to lift weights, wander around the city, and occasionally indulge in
+          urban sketching or playing with Lego.
+        </p>
+      </div>
       <Tooltip id="skill-icons" place="bottom" />
       <div className={styles.icons}>
         <JavaScriptIcon data-tooltip-id="skill-icons" data-tooltip-content="JavaScript" />
