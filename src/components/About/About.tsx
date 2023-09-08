@@ -6,7 +6,8 @@ import SQLIcon from "./skillIcons/sql.svg";
 import ReactIcon from "./skillIcons/react.svg";
 import HTMLIcon from "./skillIcons/html.svg";
 import CSSIcon from "./skillIcons/css.svg";
-import NextJSIcon from "./skillIcons/nextjs.svg";
+import NextJSIcon from "./skillIcons/next.svg";
+import GitIcon from "./skillIcons/git.svg";
 
 import styles from "./About.module.css";
 import { Tooltip } from "react-tooltip";
@@ -41,6 +42,7 @@ export function About() {
         <SQLIcon data-tooltip-id="skill-icons" data-tooltip-content="SQL" />
         <BigQueryIcon data-tooltip-id="skill-icons" data-tooltip-content="BigQuery" />
         <PythonIcon data-tooltip-id="skill-icons" data-tooltip-content="Python" />
+        <GitIcon data-tooltip-id="skill-icons" data-tooltip-content="Git" />
       </div>
     </section>
   );
