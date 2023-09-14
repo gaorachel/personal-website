@@ -8,7 +8,7 @@ export function Sidebar() {
   return (
     <div className={styles.sidebar}>
       <Tooltip id="sidebar-icons" place="left" />
-      <a href="https://www.linkedin.com/in/rachel-g-1b2163129/" className={styles.icon} target="_blank">
+      <a href="https://www.linkedin.com/in/gao-rachel/" className={styles.icon} target="_blank">
         <BsLinkedin size={25} data-tooltip-id="sidebar-icons" data-tooltip-content="LinkedIn" />
       </a>
       <a href="https://github.com/gaorachel" className={styles.icon} target="_blank">
