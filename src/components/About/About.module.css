@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 75vh;
+  margin: auto 0;
+  padding-top: 15vh;
 }
 
 .desc {
   text-align: justify;
   max-width: 610px;
-  margin: 10px 0px;
 }
 
 .name {

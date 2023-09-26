@@ -2,6 +2,13 @@
   color: var(--snow-storm-1);
   font-weight: 300;
   font-size: 12px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 420px) {
+  .section {
+    padding-bottom: 0;
+  }
 }
 
 .link {

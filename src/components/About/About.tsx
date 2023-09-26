@@ -9,6 +9,7 @@ import CSSIcon from "./skillIcons/css.svg";
 import NextJSIcon from "./skillIcons/next.svg";
 import GitIcon from "./skillIcons/git.svg";
 import JestIcon from "./skillIcons/jest.svg";
+import Tailwind from "./skillIcons/tailwind.svg";
 
 import styles from "./About.module.css";
 import { Tooltip } from "react-tooltip";
@@ -45,6 +46,7 @@ export function About() {
         <PythonIcon data-tooltip-id="skill-icons" data-tooltip-content="Python" />
         <GitIcon data-tooltip-id="skill-icons" data-tooltip-content="Git" />
         <JestIcon data-tooltip-id="skill-icons" data-tooltip-content="Jest" />
+        <Tailwind data-tooltip-id="skill-icons" data-tooltip-content="Tailwind" />
       </div>
     </section>
   );

@@ -1,10 +1,12 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import { Headerline } from "../Headerline/Headerline";
-import { MdWork, MdComputer } from "react-icons/md";
-import { FaPython, FaDatabase } from "react-icons/fa";
-import { HiDatabase } from "react-icons/hi";
 import { Chip } from "../Chip/Chip";
+import { Headerline } from "../Headerline/Headerline";
+
 import { useWindowSize } from "@uidotdev/usehooks";
+
+import { MdWork, MdComputer } from "react-icons/md";
+import { FaPython } from "react-icons/fa";
+import { HiDatabase } from "react-icons/hi";
 
 import "react-vertical-timeline-component/style.min.css";
 import styles from "./Journey.module.css";
