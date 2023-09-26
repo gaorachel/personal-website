@@ -1,4 +1,5 @@
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import { Headerline } from "../Headerline/Headerline";
 import { MdWork, MdComputer } from "react-icons/md";
 import { FaPython, FaDatabase } from "react-icons/fa";
 import { HiDatabase } from "react-icons/hi";
@@ -73,6 +74,7 @@ export function Journey() {
 
   return (
     <section id="journey">
+      <Headerline> Journey </Headerline>
       <VerticalTimeline className={styles.timeline}>
         {events.map((event) => {
           const finalPosition = width < 1170 ? "right" : event.position;

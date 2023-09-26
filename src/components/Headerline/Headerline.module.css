@@ -1,0 +1,11 @@
+.headerline {
+  font-size: 35px;
+  text-decoration: underline;
+  padding: 40px 0;
+}
+
+@media (max-width: 420) {
+  .headerline {
+    font-size: 25px;
+  }
+}

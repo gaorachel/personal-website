@@ -1,6 +1,7 @@
 import { ProjectCard } from "./ProjectCard/ProjectCard";
+import { Headerline } from "../Headerline/Headerline";
 
-import style from "./Projects.module.css";
+import styles from "./Projects.module.css";
 
 export function Projects() {
   const projectData = [
@@ -50,10 +51,10 @@ export function Projects() {
 
   return (
     <section id="projects">
-      <h1 className={style.header}> Projects </h1>
+      <Headerline> Projects </Headerline>
       {projectData.map((project) => {
         return (
-          <div className={style.section} key={project.name}>
+          <div className={styles.section} key={project.name}>
             <ProjectCard project={project} />
           </div>
         );
