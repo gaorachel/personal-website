@@ -6,6 +6,14 @@ import styles from "./Projects.module.css";
 export function Projects() {
   const projectData = [
     {
+      name: "Learning Management System",
+      intro: "A full-stack Udemy-like LMS platform",
+      websiteURL: "https://learning-management-system-rg.vercel.app/",
+      githubURL: "https://github.com/gaorachel/learning-management-system",
+      techStack: ["TypeScript", "ReactJS", "NextJS", "Tailwind", "MySQL", "Prisma", "Stripe", "Clerk"],
+      image: "/images/learningManagementSystem.png",
+    },
+    {
       name: "Flavour Quest",
       intro: "A full-stack web app using ChatGPT to generate personalised recipes based on user input",
       websiteURL: "https://flavour-quest-rg.vercel.app/",
